@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzas & Pizzas</title>
+    <style>
+    header {
+        background: #9e8d5afb; padding: 20px; font-style: italic; font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    img {
+        width: 400px;
+    } 
+    h1 {text-align: center; }
+    h2 {text-align: center;}
+    h3 {text-align: center;}
+    form {text-align: center;}
+    body {
+        background: #cfb773; padding: 20px; font-style: italic; font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    div {text-align: center;}
+    video {text-align: center;}
+    </style>
+</head>
+    
+<body>
+    <header>
+        <h1>Bem vindo a Pizzas & Pizzas</h1>
+        <h3>um mundo de diferentes pizzas</h3>
+        <div class="container">
+                <div class="div-video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/GkuKyO32Ro4?si=MAF4buZqKTcicyjJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+        </div>
+    </header>
+        <main>
+            <h2>Veja a seguir alguns dos nossos sabores favoritos</h2>
+            <ul>
+                <li><img src="https://cdn6.campograndenews.com.br/uploads/noticias/2022/03/04/3cb5530b66938475b217183a18974de301f5b0fd.jpg">Calabresa</li>
+                <li><img src="https://www.receiteria.com.br/wp-content/uploads/receitas-de-pizza-de-lombo-1-730x449.jpg">Lombo</li>
+                <li><img src="https://classic.exame.com/wp-content/uploads/2022/09/Pizza-Katzo_Margherita_FAT_8626.jpg?quality=70&strip=info">Marguerita</li>
+                <li><img src="https://img.cybercook.com.br/receitas/819/pizza-a-portuguesa-1.jpeg">Portuguesa</li>
+            </ul>
+
+        </main>
+        <h1>ATENÇÃO</h1>
+        <h2>Apenas nos dias 11, 20 e 22 de qualquer mês estaremos com uma oferta especial</h2>
+        <h3>Siga o passo a passo para reinvindicar sua mais nova "Pizza Surpresa"</h3>
+        <ol>
+            <li>Va para correndo para a Pizzaria mais próxima.</li>
+            <li>Peça uma "Pizza Mega surpresa".</li>
+            <li>Se delicie com um sabor exclusivamente seu!</li>
+        </ol>
+
+        <h3>Gostou do site? cadastre-se para receber todas as nossas notificações!</h3>
+        <form action="/enviar_formulario" method="post">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome"><br><br>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br><br>
+    
+            <label for="mensagem">Comente sua experiencia:</label><br>
+            <textarea id="mensagem" name="mensagem" rows="4" cols="50"></textarea><br><br>
+    
+            <input type="submit" value="Finalizar">
+        </form>
+        <div class="container">
+            <canvas id="meuCanvas" width="200" height="100" style="border:1px solid #5f5434fb;"></canvas>
+            <script>
+                var c = document.getElementById("meuCanvas");
+                var ctx = c.getContext("2d");
+                ctx.fillStyle = "#9e8d5afb";
+                ctx.fillRect(20, 20, 150, 75);
+            </script>
+        </div>
+        <div class="container">
+            <h2>Gráfico SVG</h2>
+            <svg width="100" height="100">
+                <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
+            </svg>
+        </div>
+</body>
+</html>
