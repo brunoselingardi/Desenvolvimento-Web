@@ -1,0 +1,15 @@
+header {
+    background: #9e8d5afb; padding: 20px; font-style: italic; font-family: Georgia, 'Times New Roman', Times, serif;
+}
+img {
+    width: 400px;
+} 
+h1 {text-align: center; }
+h2 {text-align: center;}
+h3 {text-align: center;}
+form {text-align: center;}
+body {
+    background: #cfb773; padding: 20px; font-style: italic; font-family: Georgia, 'Times New Roman', Times, serif;
+}
+div {text-align: center;}
+video {text-align: center;}
