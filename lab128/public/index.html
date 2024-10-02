@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+</head>
+<body>
+    <form method="post" action="sendEmail">
+        <label for="nome"></label>
+            <input type="text" name="nome" placeholder="Seu nome"><br><br>
+    
+            <label for="email"></label>
+            <input type="email" name="email" placeholder="Seu Email"><br><br>
+    
+            <label for="mensagem"></label><br>
+            <textarea name="mensagem" rows="4" cols="50" placeholder="Descrição"></textarea><br><br>
+    
+            <input type="submit" value="Finalizar">
+
+            </form>
+            <script>
+                function sendEmail() {
+                    Email.send({
+                        Host: "smtp.yourisp.com",
+                        Username: "nome",
+                        To: 'brunovselingardi@hotmail.com',
+                        From: "email",
+                        Body: "mensagem"
+                    })
+                    .then(function (message) {
+                        alert("Email enviado")
+                    });
+                }
+            </script>
+</body>
+</html>
