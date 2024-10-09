@@ -12,4 +12,6 @@ lab64: teste e estudo de 'node.js'
     http://127.0.0.1:3000/about
     http://127.0.0.1:3000/formulario
 
+lab128: email sender (Por enquanto utilizando 'mailto', mas estou pesquizando metodos melhores)
+
 2024
