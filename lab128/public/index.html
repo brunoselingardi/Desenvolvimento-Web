@@ -5,11 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
 
 </head>
 <body>
-    <form method="post" action="sendEmail">
+    <form method="post" action="mailto:brunoselingardi@gmail.com">
         <label for="nome"></label>
             <input type="text" name="nome" placeholder="Seu nome"><br><br>
     
@@ -22,19 +21,5 @@
             <input type="submit" value="Finalizar">
 
             </form>
-            <script>
-                function sendEmail() {
-                    Email.send({
-                        Host: "smtp.yourisp.com",
-                        Username: "nome",
-                        To: 'brunovselingardi@hotmail.com',
-                        From: "email",
-                        Body: "mensagem"
-                    })
-                    .then(function (message) {
-                        alert("Email enviado")
-                    });
-                }
-            </script>
 </body>
 </html>
